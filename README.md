@@ -1,4 +1,4 @@
-""" <- evil triple quotes so the Python functions
+""" <- evil triple quotes so the Python functions. this file functions as markdown, html, and python, although github tends to be less happy with the markdown
 <html>
 <head>
 <title>gulf of mexico compiler</title>
@@ -6,15 +6,13 @@
 <body>
 <hgroup>
 <h1>gulf of mexico compiler</h1>
-<p>up to spec with the <a href="https://github.com/TodePond/GulfOfMexico">original gulf of mexico specification</a> as of 9/16/26</p>
+<p>up to spec with the <a href="https://github.com/TodePond/GulfOfMexico">original gulf of mexico specification</a> as of 9/16/26. made by <a href="https://craisin.tech">@craisin</a></p>
 </hgroup>
 <h2>usage</h2>
-<p>head to <a >! this uses my hackclub ai api, so note that this might break depending on the uptime of that</p>
+<p>head to <a href="https://gulfofmexico.craisin.tech">here</a> to see this abomination in action! this uses my hackclub ai api, so note that this might break depending on the uptime of that</p>
 <h3>deployment</h3>
-<code>
-pip install Flask openrouter python-dotenv<br>
-python3 README.md
-</code>
+<code>pip install Flask openrouter python-dotenv<br>
+python3 README.md</code>
 <h2>code</h2>
 <form>
 <textarea name="code"></textarea><br>
