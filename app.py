@@ -16,7 +16,7 @@ ai_client = OpenRouter(
 
 with open("prompt.md") as prompt_file:
     system_prompt = prompt_file.read()
-user_prompt = "What would you expect this program to log to the console?"
+user_prompt = "What would you expect this program to log to the console? Only output the console logs."
 
 def compiler(code):
     response = ai_client.chat.send(
@@ -35,7 +35,7 @@ def index():
 
 @app.route("/api", methods=['POST'])
 def api():
-    code = request.get_data(as_text=True)
+    code = request.form.get('code')
     output = compiler(code)
     return output
 
