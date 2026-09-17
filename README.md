@@ -9,10 +9,10 @@
 <p>up to spec with the <a href="https://github.com/TodePond/GulfOfMexico">original gulf of mexico specification</a> as of 9/16/26</p>
 </hgroup>
 <h2>usage</h2>
-<p>scroll down and code in gulf of mexico! this uses my hackclub ai api, so note that this might break depending on the uptime of that</p>
+<p>head to <a >! this uses my hackclub ai api, so note that this might break depending on the uptime of that</p>
 <h3>deployment</h3>
 <code>
-pip install Flask openrouter<br>
+pip install Flask openrouter python-dotenv<br>
 python3 README.md
 </code>
 <h2>code</h2>
@@ -40,9 +40,11 @@ document.querySelector(".output").textContent = output;
 </html>
 <!-- """
 from contextlib import suppress
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from openrouter import OpenRouter
 import os
+load_dotenv()
 API_HOST = os.getenv("API_HOST", default="https://ai.hackclub.com/proxy/v1")
 API_KEY = os.getenv("API_KEY")
 MODEL = os.getenv("MODEL", default="~openai/gpt-luna-latest")
