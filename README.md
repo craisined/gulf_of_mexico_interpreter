@@ -1,4 +1,4 @@
-""" <- evil triple quotes so the Python functions. this file functions as markdown, html, and python, although github tends to be less happy with the markdown
+""" <- evil triple quotes so the Python functions. this file functions as markdown, html, and python, although github tends to be less happy with the markdown. made because i felt the need to make something cursed
 <html>
 <head>
 <title>gulf of mexico compiler</title>
