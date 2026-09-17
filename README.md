@@ -8,6 +8,7 @@
 <h2>usage</h2>
 <p>head to <a href="https://gulfofmexico.craisin.tech">here</a> to see this abomination in action! this uses my hackclub ai api, so note that this might break depending on the uptime of that</p>
 <h3>deployment</h3>
+<p>create a .env file specifiying API_KEY, and optionally specifiying API_HOST (openrouter endpoint) and MODEL</p>
 <code>pip install Flask openrouter python-dotenv<br>
 python3 README.md</code>
 <h2>code</h2>
@@ -58,5 +59,5 @@ api = lambda: compiler(request.form.get('code'))
 index.__name__, api.__name__ = "index", "api"
 app.route("/")(index)
 app.route("/api", methods=['POST'])(api)
-if __name__=="__main__": app.run()
+if __name__=="__main__": app.run(host="0.0.0.0")
 # --->
