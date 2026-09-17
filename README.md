@@ -1,8 +1,5 @@
 """ <- evil triple quotes so the Python functions. this file functions as markdown, html, and python, although github tends to be less happy with the markdown. made because i felt the need to make something cursed
 <html>
-<head>
-<title>gulf of mexico compiler</title>
-</head>
 <body>
 <hgroup>
 <h1>gulf of mexico compiler</h1>
@@ -21,6 +18,7 @@ python3 README.md</code>
 <h2>output</h2>
 <div class="output"></div>
 </body>
+<head>
 <script>
 document.querySelector("form").addEventListener("submit", async function (event) {
 event.preventDefault();
@@ -35,6 +33,8 @@ document.querySelector(".output").textContent = output;
 }
 })
 </script>
+<title>gulf of mexico compiler</title>
+</head>
 </html>
 <!-- """
 from contextlib import suppress
